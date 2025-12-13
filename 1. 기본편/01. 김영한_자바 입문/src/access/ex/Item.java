@@ -1,0 +1,24 @@
+package access.ex;
+
+public class Item {
+    private String name;
+    private int price;
+    private int quantity;
+
+    // 생성자
+    public Item(String name, int price, int quantity) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
+    // 메소드 - ShoppingCart 에서 사용하기 위해 public
+    public String getName() {
+        return name;
+    }
+
+    // 메소드 - ShoppingCart 에서 사용하기 위해 public
+    public int getTotalPrice() {
+        return price * quantity;
+    }
+}
